@@ -1,5 +1,5 @@
 {% set name = "tespy" %}
-{% set version = "0.3.4" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/TESPy-{{ version }}.tar.gz
-  sha256: 3f7ba823b6efebbee9429c36570b293af180e2394bb4a0ac67ee802007e81f9d
+  sha256: af6a0a03312b02ccde19b514c3d161e9d9e549711bbd986042057d9d140eac45
 
 build:
   number: 0
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Thermal Engineering Systems in Python (TESPy)'
+  summary: Thermal Engineering Systems in Python (TESPy)
   description: |
     Thermal Engineering Systems in Python (TESPy). This package 
     provides a powerful simulation toolkit for thermal engineering plants
