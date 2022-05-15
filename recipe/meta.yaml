@@ -18,6 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.6,<3.9
+    - setuptools
+    - setuptools_scm
   run:
     - coolprop >=6.4,<7
     - numpy >=1.13.3,<2
