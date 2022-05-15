@@ -1,5 +1,5 @@
 {% set name = "tespy" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/TESPy-{{ version }}.tar.gz
-  sha256: 54367e48ad51ef8a60e1eb8d1f07a1578b8cdb88c1fce352f9079608861b1f5d
+  sha256: 73c12aa2acb2b7c37844bf1570425d47a5c23c83cff69346dc24edec783ce8d3
 
 build:
   number: 0
@@ -18,6 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.6,<3.9
+    - setuptools
+    - setuptools_scm
   run:
     - coolprop >=6.4,<7
     - numpy >=1.13.3,<2
