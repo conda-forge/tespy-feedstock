@@ -1,11 +1,11 @@
-About tespy
-===========
+About tespy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tespy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://oemof.org/libraries/#tespy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tespy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Thermal Engineering Systems in Python (TESPy)
 
