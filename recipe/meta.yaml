@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.9
+    - python >=3.9
     - setuptools
     - setuptools_scm
     - flit-core
@@ -25,7 +25,7 @@ requirements:
     - coolprop >=6.4,<7
     - numpy >=1.13.3,<2
     - pandas >=0.19.2,!=1.0.0,<2
-    - python >=3.6,<3.9
+    - python >=3.9
     - scipy >=0.19.1,<2
     - tabulate >=0.8.2,<0.9
 
