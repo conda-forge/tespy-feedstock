@@ -1,5 +1,5 @@
 {% set name = "tespy" %}
-{% set version = "0.7.0.post1" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2fcea36b0cb4c191785b14b05c5798eb2c85753c41311916593e21e09d339284
+  sha256: 5a4e013b64435de40b265b8c7d2584b97b95ecfff6d80ff2f7a7865b56325b23
 
 build:
   number: 0
