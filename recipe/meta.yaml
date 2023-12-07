@@ -6,34 +6,31 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tespy-{{ version }}.tar.gz
   sha256: 8b0ab2755b5c8e06426af11d4cc2874e837926be5cb5554572e4e9624c85e9b0
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
+    - python >=3.9
+    - flit-core >=3.2,<4
     - pip
-    - python >=3.9
-    - setuptools
-    - setuptools_scm
-    - flit-core
   run:
-    - coolprop >=6.4,<7
-    - numpy >=1.13.3,<2
-    - pandas >=0.19.2,!=1.0.0,<2
     - python >=3.9
-    - scipy >=0.19.1,<2
-    - tabulate >=0.8.2,<0.9
+    - coolprop >=6.4,<7
     - jinja2
+    - matplotlib-base >=3.2.1,<4
+    - numpy >=1.13.3,<2
+    - pandas >=1.3.0,<3
+    - tabulate >=0.8.2,<0.9
 
 test:
   imports:
     - tespy
-    - tespy.components
   commands:
     - pip check
   requires:
