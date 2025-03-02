@@ -1,5 +1,5 @@
 {% set name = "tespy" %}
-{% set version = "0.7.8.post2" %}
+{% set version = "0.7.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tespy-{{ version }}.tar.gz
-  sha256: 34eb8ad90254ff6ecde2cdbe8936ee267db354795ac6a40c94720e9b8330288a
+  sha256: 9584a5c943e2e58bc77faaaa567300265a1e29fdef1c40d45425a38b87df5b1a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -20,6 +20,7 @@ requirements:
     - flit-core >=3.2,<4
     - pip
   run:
+    - scipy
     - python >={{ python_min }}
     - coolprop >=6.6
     - jinja2
