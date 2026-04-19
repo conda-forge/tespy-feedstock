@@ -1,5 +1,5 @@
 {% set name = "tespy" %}
-{% set version = "0.9.14" %}
+{% set version = "0.9.15" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tespy-{{ version }}.tar.gz
-  sha256: fe06e6d310b87aa3c22cafe86903a4647d835589c44c8f36673ed8a0a3ddd74a
+  sha256: e67b4e1dead14b46d17dad74a397136d55c8dd13d7855176f58e30661f8250ef
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - flit-core >=3.2,<4
     - pip
   run:
+    - fluprodia >=4.1.2
     - pint
     - scipy
     - python >={{ python_min }}
