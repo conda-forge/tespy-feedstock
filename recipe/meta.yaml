@@ -1,5 +1,5 @@
 {% set name = "tespy" %}
-{% set version = "0.9.16.post3" %}
+{% set version = "0.10.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tespy-{{ version }}.tar.gz
-  sha256: 66b2af20dc87a48e0624509d4937f1c5e6cfc438151adc0528ad358e2ba60087
+  sha256: fc16f7bbae01cfb565a01b2a0040bc7f2e5e8c8259aa5c32fb95cdc7d8bc76c7
 
 build:
   noarch: python
