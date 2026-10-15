@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tespy
-  version: "0.11.2"
+  version: "0.11.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/tespy-${{ version }}.tar.gz
-  sha256: 3113f10e1f2cd1b2f8e7b5197ebfd20a54baedd4ce09e3d3a1127d124e8fdcad
+  sha256: d30b4631be6d4803d248142d1bfeb0f38935aa2d00fb1e480bfa3bd4bb1691b0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
