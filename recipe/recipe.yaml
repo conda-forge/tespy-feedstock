@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tespy
-  version: "0.11.3"
+  version: "0.12.0.post1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/tespy-${{ version }}.tar.gz
-  sha256: d30b4631be6d4803d248142d1bfeb0f38935aa2d00fb1e480bfa3bd4bb1691b0
+  sha256: 8dacf39ff4df77676949c2f6442bb37a7b07720a82e0a71909f2f843dc7b3f27
 
 build:
   number: 0
